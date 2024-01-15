@@ -49,7 +49,7 @@ export const Button = (props) => {
 
     return (
             <div style={bgStyle}>
-                {link && <a style={{color: "black", textDecoration: "none"}} href={nav}>
+                {link && <a style={{color: "black", textDecoration: "none"}} href={nav} target="_blank">
                 <div 
                     className={className} 
                     style={buttonStyle}

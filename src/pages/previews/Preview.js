@@ -11,6 +11,7 @@ export const Preview = (props) => {
     const tools = props.tools
     const info = props.info
     const margin = props.margin
+    const format = props.format
 
     const height = props.height
 
@@ -24,7 +25,11 @@ export const Preview = (props) => {
 
     return (
         <div className="preview-wrapper">
-            <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" onClick={id > 100 ? handleExpand : null} style={{zIndex: expanded ? 2 : 1, position: expanded ? "absolute" : "relative", height: expanded ? height : "70%", width: expanded ? "auto" : "100%", objectFit: "cover", filter: expanded ? "drop-shadow(10px 10px 10px black)" : "none", marginLeft: expanded ? margin : "0"}}/>
+            {id > 100 && <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" onClick={id > 100 ? handleExpand : null} style={{zIndex: expanded ? 2 : 1, position: expanded ? "absolute" : "relative", height: expanded ? height : "70%", width: expanded ? "auto" : "100%", objectFit: "cover", filter: expanded ? "drop-shadow(10px 10px 10px black)" : "none", marginLeft: expanded ? margin : "0"}}/>}
+            {id===100 && format===2 && <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" onClick={id > 100 ? handleExpand : null} style={{zIndex: expanded ? 2 : 1, position: expanded ? "absolute" : "relative", height: expanded ? height : "70%", width: expanded ? "auto" : "100%", objectFit: "cover", filter: expanded ? "drop-shadow(10px 10px 10px black)" : "none", marginLeft: expanded ? margin : "0"}}/>}
+            {id===100 && format === 1 && 
+                <img className="preview-image" src={require("../../graphics/previews/" + String(index) + ".gif")}></img>
+            }
             {expanded && <div className="expand-message">Click again to reduce size</div>}
             <div className="preview-text-wrapper">
                 <div className="preview-text-date">

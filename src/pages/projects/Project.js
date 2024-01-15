@@ -13,6 +13,9 @@ export const Project = (props) => {
     const skills = Skills[id]
     const tools = Tools[id]
     const info = Info[id]
+    const format = props.format
+
+    const suffix = format === 1 ? ".gif" : ".png"
 
 
     return (
@@ -30,7 +33,7 @@ export const Project = (props) => {
                         onClick={props.next}
                         className="footer-right">Next Project ↦</div>
                 </div>
-                        <img className="project-image" src={require("../../graphics/previews/" + String(index) + ".png")} alt="" style={{objectFit: "cover"}}/>
+                        <img className="project-image" src={require("../../graphics/previews/" + String(index) + suffix)} alt="" style={{objectFit: "cover"}}/>
             <div className="preview-text-wrapper" 
                 style={{height: "50%"}}>
                 <div className="preview-text-date"

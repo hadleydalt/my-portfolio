@@ -6,7 +6,7 @@ import { Sidebar } from './sidebar/Sidebar'
 import { Project } from './pages/projects/Project'
 import { Preview } from './pages/previews/Preview'
 import { AboutBox } from './pages/AboutBox'
-import { Dates, Titles, ClassInfo, Skills, Tools, Info } from './pages/previews/WorkInfo'
+import { Dates, Titles, ClassInfo, Skills, Tools, Info, Format } from './pages/previews/WorkInfo'
 import { Dates as PaintDates, Titles as PaintTitles, ClassInfo as PaintClassInfo, Size, Media, Info as PaintInfo, Margins as PaintMargins } from './pages/previews/PaintInfo'
 import { Dates as DigDates, Titles as DigTitles, ClassInfo as DigClassInfo, Size as DigSize, Media as DigMedia, Info as DigInfo, Margins as DigMargins} from './pages/previews/DigInfo'
 import { Messages } from './Messages'
@@ -66,7 +66,7 @@ function App() {
               <div className="previews-wrapper">
               {Dates.map((date, index) => {
                 return (
-                  <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={() => {handleSwitch(index)}} id={100} />
+                  <Preview index={index + 1} date={date} title={Titles[index]} classInfo={ClassInfo[index]} skills={Skills[index]} tools={Tools[index]} info={Info[index]} handleSwitch={() => {handleSwitch(index)}} id={100} format={Format[index]} />
                 )
               })}
               </div>
@@ -96,7 +96,7 @@ function App() {
               <div style={{height: "100vh", width: "50vw", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "3vw", fontFamily: "Libre Baskerville"}}>Coming soon!</div>
             }
             {project<100 && 
-              <Project id={project} 
+              <Project id={project} format={Format[project]}
                 last={() => {handleSwitch(getLast(project), false, false)}} 
                 next={() => {handleSwitch(getNext(project), false, false)}} 
                 home={() => {handleSwitch(100, false, false)}}

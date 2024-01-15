@@ -37,3 +37,5 @@ export const Info = [
     "I architected and executed responsive web solutions, and also redesigned existing web pages with mindfulness of UX principles. I also conducted user testing.",
     "I created a ray tracer which parses tree-based scene representations, projects a ray to calculate intersection points, and uses a Phong lighting model to color each pixel of an image."
 ]
+
+export const Format = [1, 1, 2, 1, 2, 1, 2]

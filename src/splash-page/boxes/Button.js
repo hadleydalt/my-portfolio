@@ -32,7 +32,7 @@ export const Button = (props) => {
                 width: props.width + 12
             }}
         >
-            {link && <a href={nav} style={{textDecoration: "none"}}>
+            {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">
             <div 
                 className="Box1-button"
                 onMouseDown={handleMouseDown}

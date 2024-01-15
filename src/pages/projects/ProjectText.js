@@ -22,7 +22,7 @@ export const Text = [
 
         <YoutubeEmbed embedId="w_C5BKDNCok" />
 
-        <a style={{color: "black"}} href="https://youtu.be/w_C5BKDNCok">Click here if video is not working</a>
+        <a style={{color: "black"}} target="_blank" href="https://youtu.be/w_C5BKDNCok">Click here if video is not working</a>
         <div className="h1">Full Game Description</div>
         <div>The game can be played on a PC or in VR. In addition, the user can play 
             the game to explore the city, or partake in the scavenger hunt. Either 
@@ -102,7 +102,7 @@ export const Text = [
         <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/dash/dash8.png")} alt=""/>
         <p className="accent">Video Tours of The Result</p>
         <ColVisuals titles={dashTitles} descs={dashDescs} images={dashImages} video={true} />
-        <div className="h1">Live interactive demo coming soon! <span className="accent" style={{fontStyle: "normal"}}>Github: <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="http://github.com/hadleydalt/DASH-project.git">http://github.com/hadleydalt/DASH-project.git</a></span></div>
+        <div className="h1">Live interactive demo coming soon! <span className="accent" style={{fontStyle: "normal"}}>Github: <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} target="_blank" href="http://github.com/hadleydalt/DASH-project.git">http://github.com/hadleydalt/DASH-project.git</a></span></div>
     </>,
 
     <>
@@ -117,7 +117,7 @@ export const Text = [
         <div>Submitting work for review from fellow developers and conducting reviews using <span className="accent">Git</span></div>
         <p>Successfully contributed to build and release of the app on the App Store and created an animation in <span className="accent">After Effects</span> to showcase the app, which is also displayed on the App Store.</p>
         <div className="h1">Link to app</div>
-        <a style={{textDecoration: "none", color: "black"}} href="https://apps.apple.com/us/app/soma-pain-manager/id6444110898">https://apps.apple.com/us/app/soma-pain-manager/id6444110898</a>
+        <a style={{textDecoration: "none", color: "black"}} target="_blank" href="https://apps.apple.com/us/app/soma-pain-manager/id6444110898">https://apps.apple.com/us/app/soma-pain-manager/id6444110898</a>
         <p>→ View my After Effects animation below!</p>
         <video style={{width: "25%", height: "auto"}} className="project-visual" controls>
             <source src={require("../../graphics/soma/soma.mp4")} type="video/mp4" style={{objectFit: "cover"}} />
@@ -204,7 +204,7 @@ export const Text = [
         </video>
         <div className="h1">How it works</div>
         <ColVisuals titles={pgTitles} descs={pgDescs} images={pgImages} video={false} />
-        <p><span className="accent">Github: </span> <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="http://github.com/hadleydalt/Pet-Garden-Original-Game">http://github.com/hadleydalt/Pet-Garden-Original-Game</a></p>
+        <p><span className="accent">Github: </span> <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} target="_blank" href="http://github.com/hadleydalt/Pet-Garden-Original-Game">http://github.com/hadleydalt/Pet-Garden-Original-Game</a></p>
         <p><span className="accent">Extended User Guide: </span>  <a style={{color: "black", textDecoration: "none", fontFamily: "Work Sans"}} href="https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing">https://docs.google.com/document/d/1m_1gO6dKCQhSIOTCUyGH6tWd5Uil2Byv7RXS9LrzWdE/edit?usp=sharing</a></p>
     </>,
 
@@ -238,13 +238,13 @@ export const Text = [
         <div>I investigated the websites of similar companies who are also developing medical AI solutions for eye diseases. I then synthesized my investigation into a table of key features. </div>
         <p>This abbreviated table consists of features found in at least 2 of the 3 websites. </p>
         <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/boston/boston1.png")} alt=""/>
-        <div><span className="accent">Note: </span>The websites referenced are <a style={{color: "black"}} href="https://www.eyenuk.com/us-en/">EYENUK</a>, <a style={{color: "black"}} href="https://www.digitaldiagnostics.com/products/eye-disease/lumineticscore/">Digital Diagnostics</a>, and <a style={{color: "black"}} href="https://www.pr3vent.com/website/index.php">PR3VENT</a>.</div>
+        <div><span className="accent">Note: </span>The websites referenced are <a style={{color: "black"}} target="_blank" href="https://www.eyenuk.com/us-en/">EYENUK</a>, <a style={{color: "black"}} href="https://www.digitaldiagnostics.com/products/eye-disease/lumineticscore/">Digital Diagnostics</a>, and <a target="_blank" style={{color: "black"}} href="https://www.pr3vent.com/website/index.php">PR3VENT</a>.</div>
         <div className="h1" style={{fontSize: "1.1vw"}}>→ Wireframe</div>
         <div>With these key features in mind, I then proceeded to create a wireframe sketch integrating the key features while presenting the problem of ROP alongside the Boston AI Labs solution. </div>
         <img className="project-visual" style={{height: "auto", width: "45%"}}src={require("../../graphics/boston/boston2.png")} alt=""/>
         <div className="h1" style={{fontSize: "1.1vw"}}>→ Prototypes and conclusion</div>
         <div>Through further discussion, we were then able to devise low and high fidelity prototypes. To bring the prototypes to life, we settled on a simple blue color scheme to match the logo of Boston AI Labs. </div>
-        <p><span className="accent">View the Low and High Fidelity Prototypes here: </span> <a style={{color: "black"}} href="http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design">http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design</a></p>
+        <p><span className="accent">View the Low and High Fidelity Prototypes here: </span> <a style={{color: "black"}} target="_blank" href="http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design">http://www.figma.com/file/21ZptbJH7dX5l1kgMW9c1Q/Boston-AI-Labs-Website-Design</a></p>
         <div><span className="accent">Note: </span> Use the "Pages" menu to alternate between prototypes: </div>
         <img className="project-visual" style={{height: "auto", width: "35%"}}src={require("../../graphics/boston/boston3.png")} alt=""/>
     </>,
@@ -261,31 +261,31 @@ export const Text = [
 
     <div className="h1">Personas and Storyboarding</div>
     <div>Step into a user's shoes by observing real users interacting with a chosen interface (this can be any interface; it doesn't need to be digital). <b>Interview</b> thee individuals about their experiences, <b>create</b> personas based on these users, and <b>illustrate</b> a storyboard for one of the personas.</div>
-    <a href="https://sadunicorn777.github.io/personas-and-storyboarding/" className="click-to-view">Click to view the website →</a>
+    <a target="_blank" href="https://sadunicorn777.github.io/personas-and-storyboarding/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr2.png")} alt=""/>
     
     <div className="h1">Responsive Redesign</div>
     <div>Practice the workflow of redesigning a simple website. <b>Analyze and identify</b> flaws in an existing interface, <b>create</b> low-fidelity and high-fidelity prototypes for various screen sizes, and <b>build</b> a responsive website based on those prototypes.</div>
-    <a href="https://sadunicorn777.github.io/rr/" className="click-to-view">Click to view the website →</a>
+    <a target="_blank" href="https://sadunicorn777.github.io/rr/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr3.png")} alt=""/>
 
     <div className="h1">Iterative Design</div>
     <div>In a group of four, <b>design</b> an interactive interface for an emerging startup. <b>Mockup</b> a solution to the startup's concept, <b>conduct</b> user testing, <b>consolidate</b> feedback and <b>develop</b> a final prototype.</div>
-    <a href="https://rockyraccoon111.github.io/uiux-assign4/" className="click-to-view">Click to view the website →</a>
+    <a target="_blank" href="https://rockyraccoon111.github.io/uiux-assign4/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr4.png")} alt=""/>
 
     <div className="h1">Development</div>
     <div><b>Develop</b> an interactive interface using interface components, and <b>tie</b> the components to an internal data state. <b>Create</b> a list-based interface in React which allows users to <b>select</b> items out of a list, and then <b>aggregates</b> them.</div>
-    <a href="https://sadunicorn777.github.io/dev/" className="click-to-view">Click to view the website →</a>
+    <a target="_blank" href="https://sadunicorn777.github.io/dev/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr5.png")} alt=""/>
 
     <div className="h1">Final Portfolio</div>
     <div><b>Develop</b> a portfolio in React that showcases your work from this class! <b>Choose</b> 4 assignments to showcase, one may be a UX-related project from another context.</div>
-    <a href="https://sadunicorn777.github.io/portfolio/" className="click-to-view">Click to view the website →</a>
+    <a target="_blank" href="https://sadunicorn777.github.io/portfolio/" className="click-to-view">Click to view the website →</a>
     <img className="project-visual" style={{height: "auto", width: "35%"}}src={require("../../graphics/fr/fr1.gif")} alt=""/>
     <p><img className="project-visual" style={{height: "auto", width: "95%"}}src={require("../../graphics/fr/fr6.png")} alt=""/></p>
     <div className="h1">GitHub</div>
-    <div>GitHub Link: <a style={{color: "black"}} href="http://github.com/sadunicorn777">http://github.com/sadunicorn777</a></div>
+    <div>GitHub Link: <a style={{color: "black"}} target="_blank" href="http://github.com/sadunicorn777">http://github.com/sadunicorn777</a></div>
     <div>Please disregard the silly name of the repo, the class required me to choose an adjective, animal, and three-digit number.</div>
     </>,
 
@@ -308,6 +308,6 @@ export const Text = [
     <div className="h1">Bonus!</div>
     <div>I created an original Scenefile. This is the output produced by my Ray Tracer:</div>
     <img className="project-visual" style={{height: "auto", width: "75%"}}src={require("../../graphics/raytracer/rt5.jpg")} alt=""/>
-    <p>If you're curious what the code looks like, here's the link: <a style={{color: "black"}} href="https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml">https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml</a></p>
+    <p>If you're curious what the code looks like, here's the link: <a style={{color: "black"}} target="_blank" href="https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml">https://github.com/hadleydalt/myscenefile/blob/main/myscenefile.xml</a></p>
     </>
 ]
