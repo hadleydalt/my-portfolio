@@ -12,10 +12,10 @@ export const SplashPage = (props) => {
         <>
             <Vertical color="#EEDFB1" opacity={opacity}/>
             <Horizontal color="#EEDFB1" opacity={opacity}/>
-            <div className="splash-page" style={{justifyContent: width < 1370 ? "space-evenly" : "space-between", marginTop: width < 877 ? "20vh" : "0"}}>
-                <Col1 width = {width} handleSwitch={props.handleSwitch} />
-                {width >= 877 && <Col2 handleSwitch={props.handleSwitch} />}
-                {width >= 1370 && <Col3 handleSwitch={props.handleSwitch} />}
+            <div className="splash-page" style={{justifyContent: "space-evenly"}}>
+                <Col1 handleSwitch={props.handleSwitch} />
+                <Col2 handleSwitch={props.handleSwitch} />
+                <Col3 handleSwitch={props.handleSwitch} />
             </div>
         </>
     )

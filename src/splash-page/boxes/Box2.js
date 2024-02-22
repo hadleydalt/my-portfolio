@@ -9,8 +9,8 @@ export const Box2 = (props) => {
     return (
         <div className="Box2-wrapper" style={{height: String(height + "px")}}>
             <div className="Box2-bg" style={{height: String(height + "px")}}>
-                <div className="Box2-exterior" style={{height: String((props.height - 18) + "px")}}>
-                    <div className="Box2-interior" style={{height: String((props.height - 30) + "px")}}>
+                <div className="Box2-exterior" style={{height: String((props.height - 18) + "px"), width: "95%"}}>
+                    <div className="Box2-interior" style={{height: String((props.height - 30) + "px"), width: "91%"}}>
                         <div className="Box2-header" />
                         <div className="Box2-header-wrapper">
                             <div className="Box2-header-text">

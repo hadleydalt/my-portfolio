@@ -55,7 +55,7 @@ function App() {
       {width >= 500 &&
         <>
           <div className="first-page">
-            <Sidebar width={width} handleSwitch={handleSwitch}/>
+            {/*<Sidebar width={width} handleSwitch={handleSwitch}/> */}
             <div className="splash-page-wrapper">
               <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} />
             </div>

@@ -9,7 +9,7 @@ export const Sidebar = (props) => {
     const width = props.width
 
     return (
-        <div className="sidebar" style={{width: width < 877 ? "100vw" : "20vw", height : width < 877 ? "10vh" : "100vh", zIndex: width < 877 ? 4 : 3}}>
+        /*<div className="sidebar" style={{width: width < 877 ? "100vw" : "20vw", height : width < 877 ? "10vh" : "100vh", zIndex: width < 877 ? 4 : 3}}>
           <TitleBox expanded={width < 877} />
           <div className="sidebar-desc">
             <div className="serif">I'm Hadley.</div>
@@ -18,7 +18,7 @@ export const Sidebar = (props) => {
             <div className="small-serif">Want to work together? Let me know at <b>hadley_dalton@brown.edu</b></div>
           </div>
           <div className="bottom-bar">
-            <PageNav handleSwitch={props.handleSwitch} />
+            <PageNav handleSwitch={props.handleSwitch} /> */
             <div className="bottom-in">
               <div className="sidebar-icons">
                 <a target="_blank" href="https://www.linkedin.com/in/hadley-dalton-057041188/"><LinkedIn /></a>
@@ -33,7 +33,7 @@ export const Sidebar = (props) => {
                 Site was last updated on January 6, 2024
               </div>
             </div>
-          </div>
-        </div>
+          /*</div>
+        </div> */
     )
 }

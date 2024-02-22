@@ -8,7 +8,7 @@ export const Messages = (props) => {
 
     return (
         <>
-            {(height < 623 || width < 877) && 
+            {(height < 420 || width < 420) && 
                 <>
                     <div className="height-message">
                         For best results, please view on a larger screen or maximize your window!

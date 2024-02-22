@@ -15,19 +15,11 @@ import { squareNavs } from '../Constants'
 
 export const Col1 = (props) => {
 
-    const width = props.width
-
     return (
         <div className="sp-col-1">
                 <>
-                    <Box1 planet={true} bg={true} height={290} handleSwitch={props.handleSwitch} />
-                    {width < 1370 &&
-                        <div className="buttons-col-1">
-                            <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} handleSwitch={props.handleSwitch}/>
-                            <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} handleSwitch={props.handleSwitch}/>
-                        </div>
-                    }
-                    {width >= 1370 && <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} handleSwitch={props.handleSwitch}/>}
+                    <Notepad height={330}/>
+                    <ThreeButtons square={true} names={squareButtonNames} links={squareLinks} navs={squareNavs} handleSwitch={props.handleSwitch}/>
                 </>
         </div>
     )
@@ -49,7 +41,7 @@ export const Col2 = (props) => {
 export const Col3 = (props) => {
     return (
         <div className="sp-col-3">
-            <Notepad height={330}/>
+            <Box1 planet={true} bg={true} height={290} handleSwitch={props.handleSwitch} />
             <ThreeButtons square={false} names={nonSquareButtonNames} links={nonSquareLinks} navs={nonSquareNavs} handleSwitch={props.handleSwitch} />
         </div>
     )
