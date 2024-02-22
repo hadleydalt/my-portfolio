@@ -27,10 +27,6 @@ export const Button = (props) => {
 
     return (
         <div className="Box1-button-background"
-            style={{
-                height: props.height, 
-                width: props.width
-            }}
         >
             {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">
             <div 
@@ -45,9 +41,9 @@ export const Button = (props) => {
                     borderRight: isPressed ? "none" : "4px solid lightgray",
                     borderTop: isPressed ? "none" : "4px solid #fafafa",
                     borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    height: isPressed ? props.height + 8 : props.height,
-                    width: isPressed ? props.width : "80%",
-                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none",
+                    height: props.height,
+                    width: "90%",
+                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none"
                 }}
             >
                 {props.name}
@@ -67,8 +63,8 @@ export const Button = (props) => {
                     borderRight: isPressed ? "none" : "4px solid lightgray",
                     borderTop: isPressed ? "none" : "4px solid #fafafa",
                     borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    height: isPressed ? props.height + 8 : props.height,
-                    width: isPressed ? props.width : "80%",
+                    height: props.height,
+                    width: "90%",
                     filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none"
                 }}
             >

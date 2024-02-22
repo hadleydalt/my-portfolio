@@ -22,8 +22,8 @@ export const Box1 = (props) => {
                 <div className="Box1-interior" style={{height: String((height - 50) + "px")}}>
                     <img src={require('../../graphics/Art2.png')} alt="" className="Box1-image" style={{height: String((height - 105) + "px")}} draggable={false} />
                     <div className="Box1-button-wrapper">
-                        <Button name="About" width={"50%"} height={30} link={false} nav={104} handleSwitch={props.handleSwitch} />
-                        <Button name="Resume" width={"50%"} height={30} link={true} nav="https://drive.google.com/file/d/1nhlNgpAaA78G_4ht7_sIVIxKiRovm8jV/view"  />
+                        <Button name="About" width={"45%"} height={35} link={false} nav={104} handleSwitch={props.handleSwitch} />
+                        <Button name="Resume" width={"45%"} height={35} link={true} nav="https://drive.google.com/file/d/1nhlNgpAaA78G_4ht7_sIVIxKiRovm8jV/view"  />
                     </div>
                 </div>
             </div>

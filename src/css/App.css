@@ -543,7 +543,6 @@
 }
 
 .Box2-wrapper {
-  background: yellow;
   width: 26vw;
 }
 
@@ -989,6 +988,7 @@
 
 .Box2-buttons-container {
   width: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1120,20 +1120,18 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  height: 55px;
 }
 
 .Box1-button-background {
   background: black;
-  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 40%;
 }
 
 .Box1-button {
   background: white;
-  height: 30px;
   border-bottom: 4px solid gray;
   border-right: 4px solid lightgray;
   border-top: 4px solid #fafafa;
