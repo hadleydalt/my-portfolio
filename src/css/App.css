@@ -181,7 +181,7 @@
 }
 
 .previews-wrapper {
-  width: 78vw;
+  width: 95vw; 
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +191,7 @@
 .preview-wrapper {
   margin-top: 5vh;
   height: 70vh;
-  width: 38.5vw;
+  width: 42vw;
   margin-bottom: 5vh;
 }
 
@@ -401,7 +401,7 @@
 }
 
 .second-page {
-  width: 80vw;
+  width: 100vw;
   background: rgba(128, 0, 128, 0.0);
   z-index: 3;
   align-self: flex-end;
