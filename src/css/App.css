@@ -558,7 +558,6 @@
 .Notepad-wrapper {
   width: 28vw;
   height: 50%;
-  background: yellow;
 }
 
 .Notepad-bg {
@@ -607,7 +606,7 @@
 }
 
 .Notepad-exterior {
-  width: 96%;
+  width: 98%;
   height: 97%;
   background: lightgray;
   border-bottom: 3px solid gray;
@@ -1145,18 +1144,9 @@
   background: white;
 }
 
-.Box1-button-background {
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 80%;
-}
-
 .Box1-button {
-  width: 88%;
-  height: 75%;
+  width: 40%;
+  height: 25%;
   background: white;
   border-bottom: 4px solid gray;
   border-right: 4px solid lightgray;

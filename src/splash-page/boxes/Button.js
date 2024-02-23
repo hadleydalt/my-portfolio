@@ -26,12 +26,6 @@ export const Button = (props) => {
     }
 
     return (
-        <div className="Box1-button-background"
-            style={{
-                width: props.width ? props.width : "",
-                height: props.height ? props.height : ""
-            }}
-        >
             <div 
                 className="Box1-button"
                 onMouseDown={handleMouseDown}
@@ -44,13 +38,14 @@ export const Button = (props) => {
                     borderRight: isPressed ? "none" : "4px solid lightgray",
                     borderTop: isPressed ? "none" : "4px solid #fafafa",
                     borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none",
-                    width: props.buttonWidth ? props.buttonWidth : ""
+                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "drop-shadow(2px 2px 0px black)",
+                    width: props.buttonWidth ? props.buttonWidth : "",
+                    height: props.height ? props.height: ""
                 }}
+                onClick={!link ? () => props.handleSwitch(nav, true, false) : () =>{}}
             >
-                {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">{props.name}</a>}
+                {link && <a href={nav} style={{textDecoration: "none", color: "black"}} target="_blank">{props.name}</a>}
                 {!link && props.name}
             </div>
-        </div>
     )
 }

@@ -6,7 +6,6 @@ export const Button = (props) => {
     const [isPressed, setIsPressed] = React.useState(false)
 
     const className = props.className
-    const bgStyle = props.bgStyle
     const name = props.name
     const square = props.square
     const link = props.link
@@ -27,7 +26,9 @@ export const Button = (props) => {
         justifyContent: "center",
         cursor: isMouseEntered ? "pointer" : "default",
         filter: isPressed ? "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))" : "none",
-        textAlign: "center"
+        textAlign: "center",
+        filter: "drop-shadow(2px 2px 0px black)",
+        marginTop: "10%"
     }
 
     function handleMouseDown() {
@@ -48,7 +49,7 @@ export const Button = (props) => {
     }
 
     return (
-            <div style={bgStyle}>
+        <>
                 {link && <a style={{color: "black", textDecoration: "none"}} href={nav} target="_blank">
                 <div 
                     className={className} 
@@ -72,6 +73,6 @@ export const Button = (props) => {
                 >
                     {name}
                 </div>}
-            </div>
+                </>
     )
 }
