@@ -302,7 +302,6 @@
   width: 50%;
   height: 100px;
   border-radius: 10px;
-  background: seagreen;
   align-self: center;
   margin-top: 2vh;
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3));
@@ -400,7 +399,6 @@
 }
 
 .second-page {
-  background: yellow;
   width: 100vw;
   background: rgba(128, 0, 128, 0.0);
   z-index: 3;
@@ -419,7 +417,6 @@
 }
 
 .splash-page {
-  background: purple;
   display: flex; 
   width: 95vw;
   height: 100vh;
@@ -433,7 +430,6 @@
 .sp-col-1 {
   width: 30%;
   height: 85vh;
-  background: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -454,7 +450,6 @@
   justify-content: flex-start;
   align-items: center;
   display: flex;
-  background: blue;
 }
 
 .icons-container {
@@ -470,7 +465,6 @@
   width: 33%;
   display: flex;
   flex-direction: column;
-  background: orange;
   align-items: center;
 }
 
@@ -581,7 +575,6 @@
 
 .Box1-wrapper {
   width: 70%;
-  background: yellow;
   height: 50vh;
 }
 
@@ -788,7 +781,7 @@
 }
 
 .about-wrapper {
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -796,7 +789,7 @@
 }
 
 .about-bg {
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   position: absolute;
 }
@@ -932,10 +925,12 @@
 
 .tb-button {
   background: linear-gradient(45deg, rgb(255, 186, 238) 0%, rgb(194, 244, 255) 50%, rgb(240, 255, 172) 100%);
+  outline: 2px solid black;
 }
 
 .tb-button-normal {
   background: white;
+  outline: 2px solid black;
 }
 
 .Box2-bg {
@@ -1148,16 +1143,27 @@
   width: 40%;
   height: 25%;
   background: white;
-  border-bottom: 4px solid gray;
-  border-right: 4px solid lightgray;
-  border-top: 4px solid #fafafa;
-  border-left: 4px solid #E7E7E7;
+  border: 2px solid black;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Silkscreen';
   font-size: 12px;
+}
+
+.Box1-button:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid lightgray;
+  border-top: 4px solid #fafafa;
+  border-left: 4px solid #E7E7E7;
 }
 
 .box-top-text {

@@ -34,11 +34,7 @@ export const Button = (props) => {
                 onMouseLeave={handleMouseLeave}
                 style={{
                     cursor: isMouseEntered ? "pointer" : "default",
-                    borderBottom: isPressed ? "none" : "4px solid gray",
-                    borderRight: isPressed ? "none" : "4px solid lightgray",
-                    borderTop: isPressed ? "none" : "4px solid #fafafa",
-                    borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "drop-shadow(2px 2px 0px black)",
+                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "drop-shadow(0px 0px 0px black)",
                     width: props.buttonWidth ? props.buttonWidth : "",
                     height: props.height ? props.height: ""
                 }}

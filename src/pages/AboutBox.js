@@ -21,7 +21,7 @@ export const AboutBox = (props) => {
                   <div className="about-container">
                   <div className="favs-box">
                     <div className="stats"> {"> "}Currently</div>
-                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Working on</span> A communal wiki with a LAMP stack </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Working on</span> A search engine within Youtube videos </div>
                     <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Finished</span> Cat Finder (an adventure game) </div>
                     <div className="stats"> {"> "}Favorites</div>
                     <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Aesthetic</span> <a target="_blank" href="https://i.pinimg.com/originals/9e/30/7f/9e307f61cfec30b67a901541dd0a2d8a.jpg" style={{color: "#725a28", textDecoration: "none"}}>Pink vintage desktop</a> </div>

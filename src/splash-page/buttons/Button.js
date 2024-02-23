@@ -18,7 +18,6 @@ export const Button = (props) => {
         borderRight: isPressed ? "none" : square ? "12px solid lightgray" : "4px solid lightgray",
         borderTop: isPressed ? "none" : square ? "12px solid #fafafa" : "4px solid #fafafa",
         borderLeft: isPressed ? "none" : square ? "12px solid #E7E7E7" : "4px solid #E7E7E7",
-        borderRadius: 4,
         fontFamily: "Silkscreen",
         fontSize: 12,
         display: "flex",
@@ -27,7 +26,6 @@ export const Button = (props) => {
         cursor: isMouseEntered ? "pointer" : "default",
         filter: isPressed ? "drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))" : "none",
         textAlign: "center",
-        filter: "drop-shadow(2px 2px 0px black)",
         marginTop: "10%"
     }
 

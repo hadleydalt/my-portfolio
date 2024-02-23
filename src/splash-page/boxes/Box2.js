@@ -9,7 +9,7 @@ export const Box2 = (props) => {
     return (
         <div className="Box2-wrapper" style={{height: String(height + "px")}}>
             <div className="Box2-bg" style={{height: String(height + "px")}}>
-                <div className="Box2-exterior" style={{height: String((props.height - 18) + "px"), width: "95%"}}>
+                <div className="Box2-exterior" style={{height: String((props.height - 18) + "px"), width: "96%"}}>
                     <div className="Box2-interior" style={{height: String((props.height - 30) + "px"), width: "91%"}}>
                         <div className="Box2-header" />
                         <div className="Box2-header-wrapper">
@@ -26,7 +26,7 @@ export const Box2 = (props) => {
                                     <img className="Box2-planet" src={require('../../graphics/Planet.png')} alt="" draggable={false}/>
                                 </div>
                             </div>
-                            <Button name="Continue to site" buttonWidth={"50%"} height={"30%"} handleSwitch={() => props.handleSwitch(100, true, false)} />
+                            <Button name="View my work" buttonWidth={"50%"} height={"30%"} handleSwitch={() => props.handleSwitch(100, true, false)} />
                         </div>
                     </div>
                 </div>
