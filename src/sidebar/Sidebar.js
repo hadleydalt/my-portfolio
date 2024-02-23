@@ -27,10 +27,10 @@ export const Sidebar = (props) => {
                 <a target="_blank" href="http://instagram.com/hadleysart"><Instagram /></a>
               </div>
               <div className="sidebar-cp">
-                Hadley Dalton © 2023
+                Hadley Dalton © 2024
               </div>
               <div className="sidebar-lastupdated">
-                Site was last updated on January 6, 2024
+                Site was last updated on February 22, 2024
               </div>
             </div>
           /*</div>

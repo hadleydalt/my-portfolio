@@ -9,6 +9,7 @@ import { Dates, Titles, ClassInfo, Skills, Tools, Info, Format } from './pages/p
 import { Dates as PaintDates, Titles as PaintTitles, ClassInfo as PaintClassInfo, Size, Media, Info as PaintInfo, Margins as PaintMargins } from './pages/previews/PaintInfo'
 import { Dates as DigDates, Titles as DigTitles, ClassInfo as DigClassInfo, Size as DigSize, Media as DigMedia, Info as DigInfo, Margins as DigMargins} from './pages/previews/DigInfo'
 import { Messages } from './Messages'
+import { Sidebar } from './sidebar/Sidebar'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
         <>
           <div className="first-page">
             <div className="splash-page-wrapper">
+            <Sidebar width={width} handleSwitch={handleSwitch}/>
               <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} />
             </div>
           </div>

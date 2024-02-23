@@ -132,9 +132,13 @@
 }
 
 .bottom-in {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
   display: flex;
   height: 15vh;
-  width: 100%;
+  width: 20vw;
   justify-content: flex-end;
   flex-direction: column;
 }
@@ -162,7 +166,7 @@
   display: flex;
   align-items: center;
   font-family: "Libre Baskerville";
-  font-size: 0.5vw;
+  font-size: 0.6vw;
 }
 
 .project-wrapper {
@@ -557,7 +561,6 @@
 .Notepad-bg {
   width: 100%;
   height: 100%;
-  background: black;
   border-radius: 7px;
   display: flex;
   justify-content: center;
@@ -576,15 +579,6 @@
 .Box1-wrapper {
   width: 70%;
   height: 50vh;
-}
-
-.Box2-bg {
-  background: black;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 7px;
 }
 
 .Box2-exterior {
@@ -610,6 +604,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 2px solid black;
 }
 
 .Notepad-header {
@@ -934,7 +929,6 @@
 }
 
 .Box2-bg {
-  background: black;
   width: 100%;
   display: flex;
   align-items: center;
@@ -954,6 +948,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 2px solid black;
 }
 
 .Box2-interior {

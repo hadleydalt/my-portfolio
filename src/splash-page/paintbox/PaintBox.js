@@ -23,7 +23,8 @@ export const PaintBox = (props) => {
                 <div className="Notepad-exterior" style={{width: 390, height: 230}}>
                     <div className="Notepad-header" style={{background: "linear-gradient(90deg, rgb(234, 165, 234) 0%, rgb(229, 187, 194) 50%, rgb(232, 204, 153) 100%)", width: 389}}>
                         <div className="Notepad-header-wrapper" style={{width: 375}}>
-                            <div className="Notepad-title">Untitled.png</div>
+                            <div className="Notepad-title">Untitled.png
+                            </div>
                             <div className="Notepad-x">x</div>
                         </div>
                     </div>
