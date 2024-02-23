@@ -19,7 +19,8 @@ export const PaintBox = (props) => {
 
     return (
         <div className="Paintbox-wrapper">
-            <div className="Notepad-bg" style={{width: 400, height: 240}}>
+            <img style={{width: "45%", marginLeft: 300, transform: "rotate(25deg)"}} src={require("../../graphics/youcanpainthere.png")} />
+            <div className="Notepad-bg" style={{width: 400, height: 240, marginTop: -50}}>
                 <div className="Notepad-exterior" style={{width: 390, height: 230}}>
                     <div className="Notepad-header" style={{background: "linear-gradient(90deg, rgb(234, 165, 234) 0%, rgb(229, 187, 194) 50%, rgb(232, 204, 153) 100%)", width: 389}}>
                         <div className="Notepad-header-wrapper" style={{width: 375}}>
