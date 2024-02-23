@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <Messages width={width} height={height} />
-      {width >= 500 &&
+      {width >= 420 && height >= 420 &&
         <>
           <div className="first-page">
             <div className="splash-page-wrapper">

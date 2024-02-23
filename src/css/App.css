@@ -30,14 +30,13 @@
 }
 
 .height-message {
-  margin-top: 20px;
   position: absolute;
-  z-index: 5;
-  border: 2px solid black;
-  font-family: "Silkscreen";
+  z-index: 15;
+  font-family: "Work Sans";
   background: white;
   padding: 10px;
-  filter: drop-shadow(1px 1px 4px black);
+  width: 100vw;
+  height: 100vh;
 }
 
 .height-message-bg {
