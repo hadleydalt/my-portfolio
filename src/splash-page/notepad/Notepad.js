@@ -9,9 +9,9 @@ export const Notepad = (props) => {
     const menuOptions = ["File", "Edit", "Format", "View", "Help"]
 
     return (
-        <div className="Notepad-wrapper" style={{height: String(height + "px")}}>
-            <div className="Notepad-bg" style={{height: String(height + "px")}}>
-                <div className="Notepad-exterior" style={{height: String((props.height - 10) + "px")}}>
+        <div className="Notepad-wrapper">
+            <div className="Notepad-bg">
+                <div className="Notepad-exterior">
                     <div className="Notepad-header">
                         <div className="Notepad-header-wrapper">
                             <div className="Notepad-title">Note Pad</div>
@@ -33,12 +33,12 @@ export const Notepad = (props) => {
                         }}
                     >
                         {/*<textarea placeholder={ph} className="Notepad-enter" style={{height: String((props.height - 80) + "px"), fontFamily: "Work Sans"}} name="Text1" cols="40" rows="5"></textarea>*/}
-                        <div style={{height: String((props.height - 80) + "px")}} className="Notepad-enter">
+                        <div className="Notepad-enter">
                             <div style={{padding: "0.5rem"}}>
-                                <div style={{fontFamily: "Libre Baskerville", fontSize: "1.3vw", marginTop: "0.5rem"}}>
+                                <div style={{fontFamily: "Libre Baskerville", fontSize: "1.3vw", marginTop: "5%"}}>
                                     I'm Hadley.
                                 </div>
-                                <div style={{fontFamily: "Work Sans", fontSize: "0.9rem", marginTop: "0.5rem", fontSize: "1vw"}}>
+                                <div style={{fontFamily: "Work Sans", fontSize: "0.9rem", marginTop: "5%", fontSize: "1vw"}}>
                                 A cross-disciplinary developer, experimental aestheticist, and lover of the details. In the Dual Degree Program at <b>Brown University</b> and the <b>Rhode Island School of Design</b>, I design projects that enable new possibilities and make a difference in people's lives!
                                 </div>
                             </div>

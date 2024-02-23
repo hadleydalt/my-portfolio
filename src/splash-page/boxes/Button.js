@@ -27,6 +27,10 @@ export const Button = (props) => {
 
     return (
         <div className="Box1-button-background"
+            style={{
+                width: props.width ? props.width : "",
+                height: props.height ? props.height : ""
+            }}
         >
             <div 
                 className="Box1-button"
@@ -40,7 +44,8 @@ export const Button = (props) => {
                     borderRight: isPressed ? "none" : "4px solid lightgray",
                     borderTop: isPressed ? "none" : "4px solid #fafafa",
                     borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none"
+                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none",
+                    width: props.buttonWidth ? props.buttonWidth : ""
                 }}
             >
                 {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">{props.name}</a>}
