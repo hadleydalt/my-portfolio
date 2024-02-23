@@ -2,7 +2,6 @@ import './css/App.css';
 import React from 'react'
 import { useWindowDimensions } from './Functions'
 import { SplashPage } from './splash-page/SplashPage'
-import { Sidebar } from './sidebar/Sidebar'
 import { Project } from './pages/projects/Project'
 import { Preview } from './pages/previews/Preview'
 import { AboutBox } from './pages/AboutBox'
@@ -55,13 +54,14 @@ function App() {
       {width >= 500 &&
         <>
           <div className="first-page">
-            {/*<Sidebar width={width} handleSwitch={handleSwitch}/> */}
             <div className="splash-page-wrapper">
               <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} />
             </div>
           </div>
           <div 
-            className="second-page">
+            className="second-page" style={{
+              marginTop: (100 / width) * 1000
+            }}>
             {project===100 && 
               <div className="previews-wrapper">
               {Dates.map((date, index) => {

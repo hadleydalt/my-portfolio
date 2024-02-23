@@ -5,7 +5,6 @@ import { Button } from './Button'
 export const Box1 = (props) => {
     return (
         <div className="Box1-wrapper">
-            {props.bg && 
                 <div>
                     <div className="Box1-bg">
                     <div className="Box1-exterior">
@@ -19,7 +18,7 @@ export const Box1 = (props) => {
                     </div>
                 </div>
                 <div className="Box1-interior">
-                    <img src={require('../../graphics/Art2.png')} alt="" className="Box1-image" draggable={false} />
+                    <img src={require('../../graphics/Art2.png')} style={{objectFit: "cover"}} alt="" className="Box1-image" draggable={false} />
                     <div className="Box1-button-wrapper">
                         <Button name="About" link={false} nav={104} handleSwitch={props.handleSwitch} />
                         <Button name="Resume" link={true} nav="https://drive.google.com/file/d/1nhlNgpAaA78G_4ht7_sIVIxKiRovm8jV/view"  />
@@ -28,7 +27,6 @@ export const Box1 = (props) => {
             </div>
                     </div>
                 </div>
-            }
         </div>
     )
 }
