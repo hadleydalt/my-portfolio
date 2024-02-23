@@ -1120,6 +1120,7 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
+  height: 23%;
 }
 
 .Box1-button-background {
@@ -1128,9 +1129,12 @@
   align-items: center;
   justify-content: center;
   width: 40%;
+  height: 80%;
 }
 
 .Box1-button {
+  width: 88%;
+  height: 75%;
   background: white;
   border-bottom: 4px solid gray;
   border-right: 4px solid lightgray;
@@ -1153,9 +1157,9 @@
 
 .planet {
   position: absolute;
-  width: 200px;
-  margin-top: -90px;
-  margin-left: -20px;
+  width: 70%;
+  margin-top: -35%;
+  margin-left: -5%;
   transform: rotate(20deg);
 }
 

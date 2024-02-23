@@ -28,7 +28,6 @@ export const Button = (props) => {
     return (
         <div className="Box1-button-background"
         >
-            {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">
             <div 
                 className="Box1-button"
                 onMouseDown={handleMouseDown}
@@ -41,35 +40,12 @@ export const Button = (props) => {
                     borderRight: isPressed ? "none" : "4px solid lightgray",
                     borderTop: isPressed ? "none" : "4px solid #fafafa",
                     borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    height: props.height,
-                    width: "90%",
                     filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none"
                 }}
             >
-                {props.name}
+                {link && <a href={nav} style={{textDecoration: "none"}} target="_blank">{props.name}</a>}
+                {!link && props.name}
             </div>
-                </a>}
-            {!link && 
-            <div 
-                className="Box1-button"
-                onMouseDown={handleMouseDown}
-                onMouseUp={handleMouseUp}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => {props.handleSwitch(nav, true, false)}}
-                style={{
-                    cursor: isMouseEntered ? "pointer" : "default",
-                    borderBottom: isPressed ? "none" : "4px solid gray",
-                    borderRight: isPressed ? "none" : "4px solid lightgray",
-                    borderTop: isPressed ? "none" : "4px solid #fafafa",
-                    borderLeft: isPressed ? "none" : "4px solid #E7E7E7",
-                    height: props.height,
-                    width: "90%",
-                    filter: isPressed ? "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5)" : "none"
-                }}
-            >
-                {props.name}
-            </div>}
         </div>
     )
 }
