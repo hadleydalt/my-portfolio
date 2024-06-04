@@ -15,9 +15,9 @@ export const SplashPage = (props) => {
         <>
             <Vertical color="#f2f2f2" opacity={opacity}/>
             <Horizontal color="#f2f2f2" opacity={opacity}/>
-            <div style={{width: "100vw", height: "100vh", zIndex: 9999, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start"}}>
-                <img src={require("../graphics/constellations.png")} style={{width: "60%", opacity: "60%", transform: String("rotate(" + scrollPos / 4 + "deg)")}}></img>
-                <div style={{height: "70vh", display: "flex", flexDirection: "column", marginTop: "-60vh"}}>
+            <div style={{width: "100vw", height: "100vh", zIndex: 9999, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+                <img src={require("../graphics/constellations.png")} style={{marginTop: "-15vh", width: "60%", opacity: String(String(60 - (scrollPos / 5)) + "%"), transform: String("rotate(" + scrollPos / 4 + "deg)")}}></img>
+                <div style={{ position: "absolute", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                     <img src={require("../graphics/Hadley.png")} style={{width: "40%", alignSelf: "center", marginLeft: String("-" + String((scrollPos / 10) + 15) + "vw")}}></img>
                     <img src={require("../graphics/Dalton.png")} style={{width: "40%", alignSelf: "center", marginTop: "-6vh", marginLeft: String(String(15 - (scrollPos / 10)) + "vw")}}></img>
                     <img src={require("../graphics/desc.png")} style={{width: "40%", alignSelf: "center", marginLeft: String("-" + scrollPos / 10 + "vw")}}></img>
