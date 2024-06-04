@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../css/App.css'
 import { NotepadMenuOpt } from './NotepadMenuOpt'
+import { TitleBox } from '../../sidebar/TitleBox'
 
 export const Notepad = (props) => {
     const height = props.height.toString()
@@ -35,11 +36,11 @@ export const Notepad = (props) => {
                         {/*<textarea placeholder={ph} className="Notepad-enter" style={{height: String((props.height - 80) + "px"), fontFamily: "Work Sans"}} name="Text1" cols="40" rows="5"></textarea>*/}
                         <div className="Notepad-enter">
                             <div style={{padding: "0.5rem"}}>
-                                <div style={{fontFamily: "Libre Baskerville", fontSize: "1.3vw", marginTop: "5%"}}>
+                                <div style={{fontFamily: "PT Serif", fontSize: "1.3vw", marginTop: "5%"}}>
                                     I'm Hadley.
                                 </div>
                                 <div style={{fontFamily: "Work Sans", fontSize: "0.9rem", marginTop: "5%", fontSize: "1vw"}}>
-                                A cross-disciplinary developer, experimental aestheticist, and lover of the details. In the Dual Degree Program at <b>Brown University</b> and the <b>Rhode Island School of Design</b>, I design projects that enable new possibilities and make a difference in people's lives!
+                                I am a full-stack and mobile developer, a 0-1 product designer, and a graphics artist. Across all three of these fields I tell stories, inspire engagement and wonder, and build communities!
                                 </div>
                             </div>
                         </div>

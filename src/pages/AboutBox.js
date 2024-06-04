@@ -20,16 +20,16 @@ export const AboutBox = (props) => {
                   </div>
                   <div className="about-container">
                   <div className="favs-box">
-                    <div className="stats"> {"> "}Currently</div>
+                    <div className="stats"> {"> "}In Tech</div>
                     <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Working on</span> A search engine within Youtube videos </div>
-                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Finished</span> Cat Finder (an adventure game) </div>
-                    <div className="stats"> {"> "}Favorites</div>
-                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Aesthetic</span> <a target="_blank" href="https://i.pinimg.com/originals/9e/30/7f/9e307f61cfec30b67a901541dd0a2d8a.jpg" style={{color: "#725a28", textDecoration: "none"}}>Pink vintage desktop</a> </div>
-                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Creative outlet</span> <a target="_blank" href="https://blender.org" style={{color: "#725a28", textDecoration: "none"}}>Blender</a> </div>
-                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Startup</span> <a target="_blank" href="https://liquiddeath.com" style={{color: "#725a28", textDecoration: "none"}}>Liquid Death</a> </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Finished</span> A communication app using MQTT </div>
+                    <div className="stats"> {"> "}And Out</div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Practicing</span> Figure skating </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "1px solid rgba(191, 163, 20, 0.5)"}}><span className="project-name">➛ Learning about</span> Hydrogen powered driving </div>
+                    <div className="project-list" style={{marginLeft: "0vw", paddingTop: "1vh", color: "#725a28", borderBottom: "none"}}><span className="project-name">➛ Trying out</span> Dressmaking (I made a <a href="https://www.instagram.com/p/B9PUM0vFgkP/?img_index=1" style={{color: "#725a28"}}>dress out of paper</a>!) </div>
                   </div>
                   <div className="about-box">
-                    {text === 0 && <div className="about-text" style={{lineHeight: "4.5vh"}}><span className="about-accent">Hadley</span> <span className="about-small">(HAD-lee)</span> is a student of the Brown|RISD Dual Degree program in Providence, RI. She is interested in developing products to address the issues that people encounter, ranging from a <span class="personal">personal</span> to <span class="macro">macro</span> scale. Despite the ever-expanding capabilities of AI, Hadley believes that empathy is a critical component of any product that utilizes software technology. With her mission and design strategies, she hopes to bridge the gap between technology and empathy, and make a difference in people's lives.</div>}
+                    {text === 0 && <div className="about-text" style={{lineHeight: "4.5vh"}}> Hi! I’m a senior in the Brown|RISD Dual Degree Program studying Computer Science, Fine Arts and Digital Design. Specifically, I’m interested in studying how Computer Vision and AR/VR can enhance Product Design. I’m motivated to build interactive experiences that improve people’s lives, and promote health and happiness. I started by developing web experiences, then mobile apps, and am now exploring 3D graphics and AR/VR. Whether it be in health, finance, urban development, or entertainment, there’s always space for exploring how interaction design can improve our progress.</div>}
                     {text === 1 && <div className="about-projects">
                         <div className="scale" />
                         <div className="scale-titles">
@@ -49,3 +49,6 @@ export const AboutBox = (props) => {
               </div>
     )
 }
+
+/*                     {text === 0 && <div className="about-text" style={{lineHeight: "4.5vh"}}><span className="about-accent">Hadley</span> <span className="about-small">(HAD-lee)</span> is a student of the Brown|RISD Dual Degree program in Providence, RI. She is interested in developing products to address the issues that people encounter, ranging from a <span class="personal">personal</span> to <span class="macro">macro</span> scale. Despite the ever-expanding capabilities of AI, Hadley believes that empathy is a critical component of any product that utilizes software technology. With her mission and design strategies, she hopes to bridge the gap between technology and empathy, and make a difference in people's lives.</div>}
+ */

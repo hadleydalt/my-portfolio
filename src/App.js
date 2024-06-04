@@ -57,7 +57,7 @@ function App() {
           <div className="first-page">
             <div className="splash-page-wrapper">
             <Sidebar width={width} handleSwitch={handleSwitch}/>
-              <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} />
+              <SplashPage width={width} opacity={opacity} handleSwitch={handleSwitch} scrollPos={scrollPos} />
             </div>
           </div>
           <div 
@@ -95,7 +95,7 @@ function App() {
               <AboutBox />
             }
             {project===101 &&
-              <div style={{height: "100vh", width: "50vw", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "3vw", fontFamily: "Libre Baskerville"}}>Coming soon!</div>
+              <div style={{height: "100vh", width: "50vw", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "3vw", fontFamily: "PT Serif"}}>Coming soon!</div>
             }
             {project<100 && 
               <Project id={project} format={Format[project]}

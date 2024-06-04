@@ -26,7 +26,7 @@ export const Box2 = (props) => {
                                     <img className="Box2-planet" src={require('../../graphics/Planet.png')} alt="" draggable={false}/>
                                 </div>
                             </div>
-                            <Button name="View my work" buttonWidth={"50%"} height={"30%"} handleSwitch={() => props.handleSwitch(100, true, false)} />
+                            <Button name="View My Work" buttonWidth={"50%"} height={"30%"} handleSwitch={() => props.handleSwitch(100, true, false)} />
                         </div>
                     </div>
                 </div>

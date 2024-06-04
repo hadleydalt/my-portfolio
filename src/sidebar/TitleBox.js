@@ -6,7 +6,7 @@ export const TitleBox = (props) => {
     const expanded = props.expanded
 
     return (
-        <div className="Title-box-wrapper" style={{width: expanded ? "50vw": "20vw"}}>
+        <div className="Title-box-wrapper" style={{width: expanded ? "50vw": "100vw"}}>
             <div className="Title-box" style={{width: expanded ? "40vw" : "14vw"}}>
                 <div className="Title-box-border" style={{width: expanded ? "39vw" : "13.5vw"}}/>
                 <div className="Title-box-text" style={{fontSize: expanded ? "4vw" : "1.5vw"}}>
