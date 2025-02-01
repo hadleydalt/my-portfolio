@@ -47,10 +47,18 @@ function App() {
               onMouseEnter={() => setNewCursor("This logo is my initials mirrored but it also looks like a fly. 🪰 Flies in literature and mythology have symbolized persistence, survival, resilience, and inevitable decay. In design, they are a source of inspiration, a reminder that the creative process is always cyclical.", true)}
               onMouseLeave={() => setNewCursor("hi", false)}
             />
+            <a href="http://instagram.com/hadleydalt" style={{color: 'black'}}>
             <Instagram />
+            </a>
+            <a href="mailto:hadleydalt@gmail.com" style={{color: 'black'}}>
             <Mail />
+            </a>
+            <a href="http://github.com/hadleydalt" style={{color: 'black'}}>
             <Git />
+            </a>
+            <a href="http://linkedin.com/in/hadley-dalton">
             <LinkedIn />
+            </a>
           </div>
         </div>
         <div className="main">

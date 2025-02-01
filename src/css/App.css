@@ -51,8 +51,8 @@
 
 .paper-clip {
   display: flex;
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 3vw;
+  height: 3vw;
   background: #92949A;
   align-items: center;
   justify-content: center;
