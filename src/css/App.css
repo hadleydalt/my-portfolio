@@ -1,219 +1,98 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   width: 100vw;
   user-select: none;
 }
 
-.box-heading {
-  font-family: "Gilda Display";
-  font-style: italic;
-  font-size: 1.5vw;
-  text-transform: uppercase;
-}
-
-.digital-heading {
-  font-size: 1.1vw;
-  font-style: normal;
-  font-family: DotGothic16;
-}
-
-.collage-1 {
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 40vw;
-}
-
-.collage-2 {
-  z-index: -1;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 33vw;
-}
-
-.splotch-1 {
-  z-index: -3;
-  position: fixed;
-  right: 10vw;
-  top: -2vh;
-  width: 35vw;
-  opacity: 0.5;
-}
-
-.splotch-2 {
-  z-index: -3;
-  position: fixed;
-  left: 12vw;
-  bottom: -15vh;
-  height: 100vh;
-  opacity: 0.5;
-}
-
-.background-noise {
-  position: fixed;
+.splash {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 100vw;
   height: 100vh;
-  z-index: -2;
 }
 
-.grid-top {
+.sidebar {
+  width: 6vw;
+  height: 100vh;
+  border-right: 1px solid lightgray;
   display: flex;
-  width: 100vw;
-  height: 11vh;
-  border: 1px solid black;
-  flex-direction: row;
-  justify-content:flex-start;
-}
-
-.titular {
-  text-transform: uppercase;
-}
-
-.titular-uno {
-  font-size: 4vw;
-  font-style: italic;
-  font-family: "Gilda Display";
-  display: flex;
-  justify-content: center;
-  width: 50vw;
-}
-
-.titular-dos {
-  font-size: 4vw;
-  font-family: "Work Sans";
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  width: 50vw;
-}
-
-.welcome-box {
-  position: relative;
-  width: 25vw;
-  height: 11vh;
-  overflow: hidden;
-  border-right: 1px solid black;
-
-}
-
-.text-wrapper {
-  position: absolute;
-  width: 25vw;
-  height: 11vh;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
-
-.sliding-text {
-  display: inline-block;
-  animation: slide 30s linear infinite;
-  font-size: 5vw;
-}
-
-.english {
-  font-family: "Gilda Display";
-}
-
-.french {
-  font-family: "Work Sans";
-  font-weight: lighter;
-  font-style: italic;
-}
-
-.chinese {
-  font-family: "Work Sans";
-}
-
-.spanish {
-  font-family: "DotGothic16";
-  font-style: italic;
-}
-
-.russian {
-  font-family: "Gilda Display";
-  font-size: 4vw;
-}
-
-.italian {
-  font-family: "Work Sans";
-  font-style: italic;
-}
-
-.vietnamese {
-  font-family: "Gilda Display";
-  font-size: 5vw;
-}
-
-.german {
-  font-family: "Work Sans";
-  font-style: italic;
-}
-
-.japanese {
-  font-family: "DotGothic16";
-}
-
-.dutch {
-  font-family: "Gilda Display";
-  font-style: italic;
-  font-weight: 400;
-}
-
-.korean {
-  font-family: "Work Sans";
-}
-
-.hindi {
-  font-family: "Work Sans";
-  font-style: italic;
-  font-weight: lighter;
-}
-
-.break {
-  padding-left: 1vw;
-  padding-right: 1vw;
-  font-size: 1vw;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(25vw);
-  }
-  to {
-    transform: translateX(-290vw);
-  }
-}
-
-.grid-top-panel {
-  width: 75vw;
-  height: 11vh;
-  border-right: 1px solid black;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.grid-middle {
-  display: flex;
-  width: 100vw;
-  height: 82vh;
-  border: 1px solid black;
-  border-top: 0;
-  flex-direction: row;
-}
-
-.grid-middle-panel {
-  display: flex; 
   flex-direction: column;
-  width: 75vw;
-  height: 82vh;
-  border-right: 1px solid black;
+  align-items: center;
+}
+
+.main {
+  width: 47vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-side {
+  width: 47vw;
+  height: 100vh;
+}
+
+.resume-window {
+  width: 47vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 1px solid lightgray;
+  margin-left: 100%;
+}
+
+.resume {
+  width: 35vw;
+  padding-left: 5vw;
+}
+
+.paper-clip {
+  display: flex;
+  width: 3.5vw;
+  height: 3.5vw;
+  background: #92949A;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vw;
+  margin-top: -70vh;
+}
+
+.title-box {
+  padding-left: 2vw;
+}
+
+.main-title {
+  max-width: 40vw;
+}
+
+.main-subtitle {
+  font-size: 0.9vw;
+  color: #92949A;
+  font-family: "Lora";
+  background: transparent;
+  border: 0;
+  padding: 0;
+  padding-top: 3vh;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 3vw;
+  height: 25vh;
+  margin-top: 1.5vw;
+}
+
+.icon-box {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 0.5vw;
 }
