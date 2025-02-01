@@ -4,42 +4,54 @@ import { useWindowDimensions } from './Functions'
 import { LinkedIn, Instagram, Mail, Git } from './Icons'
 import SlidingResume from './SlidingResume'
 import ResumeButton from './ResumeButton'
+import CursorMessage from './CursorMessage'
 
 function App() {
 
   const { height, width } = useWindowDimensions()
-  const [scrollPos, setScrollPos] = useState(0)
 
   const [isMoved, setIsMoved] = useState(false)
 
-  const handleScroll = () => {
-    const pos = window.scrollY
-    setScrollPos(pos)
+  const [cursor, setCursor] = useState({x: 0, y: 0})
+
+  const [message, setMessage] = useState("")
+  const [isVisible, setIsVisible] = useState(false)
+
+  const setNewCursor = (newMessage, newVisible) => {
+    setIsVisible(newVisible)
+    setMessage(newMessage)
+
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: 'true' })
+    const logMousePosition = (event) => {
+      setCursor({x: event.clientX, y: event.clientY})
+    };
+
+    window.addEventListener("mousemove", logMousePosition);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-
-  // const opacity = 1.0 - (scrollPos / height)
-
-  // window.scrollTo({top: point, behavior: "smooth"})
+      window.removeEventListener("mousemove", logMousePosition);
+    };
+  }, []);
 
   return (
+    <>
+    <CursorMessage cursor={cursor} message={message} visible={isVisible} />
     <div className="App">
       <div className="splash">
         <div className="sidebar">
           <div className="icons-container">
-            <img className="icon-box" src={require("./graphics/HDLogo.png")} />
+            <img 
+              className="icon-box" src={require("./graphics/HDLogo.png")} 
+              onMouseEnter={() => setNewCursor("This logo is my initials mirrored but it also looks like a fly. 🪰 Flies in literature and mythology have symbolized persistence, survival, resilience, and inevitable decay. In design, they are a source of inspiration, a reminder that the creative process is always cyclical.", true)}
+              onMouseLeave={() => setNewCursor("hi", false)}
+            />
             <Instagram />
             <Mail />
             <Git />
             <LinkedIn />
-          </div> 
+          </div>
         </div>
         <div className="main">
           <div className="title-box">
@@ -48,10 +60,11 @@ function App() {
           </div>
         </div>
         <div className="main-side">
-          <SlidingResume isMoved={isMoved} />
+          <SlidingResume isMoved={isMoved} setNewCursor={setNewCursor} />
         </div>
       </div>
     </div>
+    </>
   );
 }
 

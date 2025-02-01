@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.5vw;
+  margin-left: -1.3vw;
   margin-top: -70vh;
 }
 
@@ -95,4 +96,16 @@
   width: 3vw;
   height: 3vw;
   border-radius: 0.5vw;
+}
+
+.cursor-msg {
+  position: absolute;
+  background: white;
+  border: 1px solid lightgray;
+  z-index: 5;
+  font-family: "Poppins";
+  font-size: 0.8vw;
+  color: #92949A;
+  padding: 1vw;
+  max-width: 20vw;
 }

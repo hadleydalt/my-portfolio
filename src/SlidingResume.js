@@ -1,8 +1,8 @@
 import { React } from 'react'
 import { motion } from "framer-motion"
-import { Download } from './Icons'
+import PaperClip from './PaperClip'
 
-export default function SlidingResume({ isMoved }) {
+export default function SlidingResume({ isMoved, setNewCursor }) {
 
     return (
         <motion.div 
@@ -10,16 +10,8 @@ export default function SlidingResume({ isMoved }) {
             animate={{x: isMoved ? "-100%" : 0}}
             transition={{type: "spring", stiffness: 50}}
         >
-          <div 
-            className="paper-clip"
-            style={{marginLeft: isMoved ? "-1.75vw" : 0}}
-          >
-            <a href="https://docs.google.com/document/d/1ZEyrMg_p3rjS8Yxud48Mf20RPDb5acEgVaIoNFjxZNQ/edit?usp=sharing"
-            target="_blank" rel="noopener noreferrer">
-            <Download />
-            </a>
-          </div>
-          <img className="resume" src={require("./graphics/Resume_Lora.png")}/>
+          <PaperClip isMoved={isMoved} setNewCursor={setNewCursor} />
+          <img className="resume" src={require("./graphics/Resume_Lora.png")} />
         </motion.div>
     )
 }
