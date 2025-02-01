@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     const logMousePosition = (event) => {
-      setCursor({x: event.clientX, y: event.clientY})
+      setCursor({x: event.clientX, y: event.clientY + window.scrollY})
     };
 
     window.addEventListener("mousemove", logMousePosition);
@@ -61,6 +61,8 @@ function App() {
             </a>
           </div>
         </div>
+        <div className="main-column">
+        <div className="main-wrapper">
         <div className="main">
           <div className="title-box">
           <img src={require("./graphics/TextTitle7.png")} className="main-title" />
@@ -69,6 +71,11 @@ function App() {
         </div>
         <div className="main-side">
           <SlidingResume isMoved={isMoved} setNewCursor={setNewCursor} />
+        </div>
+        </div>
+        <div className="projects-wrapper">
+
+        </div>
         </div>
       </div>
     </div>
