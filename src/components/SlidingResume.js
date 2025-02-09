@@ -11,7 +11,7 @@ export default function SlidingResume({ isMoved, setNewCursor }) {
             transition={{type: "spring", stiffness: 50}}
         >
           <PaperClip isMoved={isMoved} setNewCursor={setNewCursor} />
-          <img className="resume" src={require("./graphics/Resume_Lora.png")} />
+          <img className="resume" src={require("../graphics/ResumePng.png")} />
         </motion.div>
     )
 }

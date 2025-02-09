@@ -2,15 +2,15 @@ import './css/App.css';
 import { React, useState, useEffect } from 'react'
 import { useWindowDimensions } from './Functions'
 import { LinkedIn, Instagram, Mail, Git } from './Icons'
-import SlidingResume from './SlidingResume'
-import ResumeButton from './ResumeButton'
-import CursorMessage from './CursorMessage'
+import CursorMessage from './components/CursorMessage'
+import BMW from './pages/BMW'
+import NotFound from './pages/NotFound'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
 
 function App() {
 
   const { height, width } = useWindowDimensions()
-
-  const [isMoved, setIsMoved] = useState(false)
 
   const [cursor, setCursor] = useState({x: 0, y: 0})
 
@@ -47,36 +47,39 @@ function App() {
               onMouseEnter={() => setNewCursor("This logo is my initials mirrored but it also looks like a fly. 🪰 Flies in literature and mythology have symbolized persistence, survival, resilience, and inevitable decay. In design, they are a source of inspiration, a reminder that the creative process is always cyclical.", true)}
               onMouseLeave={() => setNewCursor("hi", false)}
             />
-            <a href="http://instagram.com/hadleydalt" style={{color: 'black'}}>
+            <a href="http://instagram.com/hadleydalt" 
+            onMouseEnter={() => setNewCursor("Instagram", true)}
+            onMouseLeave={() => setNewCursor("hi", false)}
+            style={{color: 'black'}}>
             <Instagram />
             </a>
-            <a href="mailto:hadleydalt@gmail.com" style={{color: 'black'}}>
+            <a href="mailto:hadleydalt@gmail.com" 
+            onMouseEnter={() => setNewCursor("Email Me", true)}
+            onMouseLeave={() => setNewCursor("hi", false)}
+            style={{color: 'black'}}>
             <Mail />
             </a>
-            <a href="http://github.com/hadleydalt" style={{color: 'black'}}>
+            <a href="http://github.com/hadleydalt" 
+            onMouseEnter={() => setNewCursor("GitHub", true)}
+            onMouseLeave={() => setNewCursor("hi", false)}
+            style={{color: 'black'}}>
             <Git />
             </a>
-            <a href="http://linkedin.com/in/hadley-dalton">
+            <a href="http://linkedin.com/in/hadley-dalton"
+            onMouseEnter={() => setNewCursor("LinkedIn", true)}
+            onMouseLeave={() => setNewCursor("hi", false)}
+            >
             <LinkedIn />
             </a>
           </div>
         </div>
-        <div className="main-column">
-        <div className="main-wrapper">
-        <div className="main">
-          <div className="title-box">
-          <img src={require("./graphics/TextTitle7.png")} className="main-title" />
-          <ResumeButton toggleMove={() => setIsMoved(!isMoved)} label= {isMoved ? "← Hide Resume" : "Resume →"} />
-          </div>
-        </div>
-        <div className="main-side">
-          <SlidingResume isMoved={isMoved} setNewCursor={setNewCursor} />
-        </div>
-        </div>
-        <div className="projects-wrapper">
-
-        </div>
-        </div>
+        <Router basename="/my-portfolio">
+          <Routes>
+            <Route path="/" element={<Home setNewCursor={setNewCursor}/>} />
+            <Route path="/bmw" element={<BMW />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
       </div>
     </div>
     </>
