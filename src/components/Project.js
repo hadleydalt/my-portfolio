@@ -1,9 +1,14 @@
 import { React } from 'react'
+import { useNavigate } from "react-router-dom";
 
-export default function Project({title, desc, tags}) {
+export default function Project({title, desc, tags, endpoint}) {
+
+    const navigate = useNavigate();
 
     return (
-        <div className="project-img-wrapper">
+        <div 
+        onClick={() => navigate(String("/" + endpoint))}
+        className="project-img-wrapper">
             <div className="project-img">
                 <div className="tags-label">
                     {tags.map((tag, index) => (index === 0 ? tag : ` • ${tag}`))}

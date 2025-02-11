@@ -4,9 +4,13 @@ import { useWindowDimensions } from './Functions'
 import { LinkedIn, Instagram, Mail, Git } from './Icons'
 import CursorMessage from './components/CursorMessage'
 import BMW from './pages/BMW'
+import Dash from './pages/Dash'
+import DriveAlive from './pages/DriveAlive'
+import GoFigure from './pages/GoFigure'
 import NotFound from './pages/NotFound'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -74,9 +78,13 @@ function App() {
           </div>
         </div>
         <Router basename="/my-portfolio">
+        <ScrollToTop /> 
           <Routes>
             <Route path="/" element={<Home setNewCursor={setNewCursor}/>} />
             <Route path="/bmw" element={<BMW />} />
+            <Route path="/dash" element={<Dash />} />
+            <Route path="/drive-alive" element={<DriveAlive />} />
+            <Route path="/go-figure" element={<GoFigure />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

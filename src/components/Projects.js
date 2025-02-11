@@ -7,10 +7,10 @@ export default function Projects() {
       <div>
         <div className="projects-heading">Featured Projects</div>
         <div className="projects-wrapper">
-          <Project title="MyBMW" desc="Redefining user interaction with car features" tags={["UX Design", "UX Research", "Mobile"]}/>
-          <Project  title="DASH: A Notetaking System" desc="Redesigning the intuition note-taking and file storage" tags={["UX Design", "Fullstack"]}/>
-          <Project  title="DriveAlive" desc="Detecting and mitigating drowsy driving through Convolutional Neural Networks" tags={["Product Design", "Fullstack", "Computer Vision"]}/>
-          <Project  title="GoFigure" desc="Democratizing access to an elite sport through an intuitive coaching app" tags={["UX Design", "Product Design"]}/>
+          <Project title="MyBMW" desc="Redefining user interaction with car features" tags={["UX Design", "UX Research", "Mobile"]} endpoint="bmw"/>
+          <Project  title="DASH: A Notetaking System" desc="Redesigning the intuition note-taking and file storage" tags={["UX Design", "Fullstack"]} endpoint="dash"/>
+          <Project  title="DriveAlive" desc="Detecting and mitigating drowsy driving through Convolutional Neural Networks" tags={["Product Design", "Fullstack", "Computer Vision"]} endpoint="drive-alive"/>
+          <Project  title="GoFigure" desc="Democratizing access to an elite sport through an intuitive coaching app" tags={["UX Design", "Product Design"]} endpoint="go-figure"/>
         </div>
 
         <div className="projects-heading">Other Work</div>

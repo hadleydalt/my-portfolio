@@ -1,8 +1,15 @@
 import InfoBlock from "../components/InfoBlock"
+import { useNavigate } from "react-router-dom";
 
-function SubPageTemplate({opp, premise, photoPaths, role, tools, scope, duration, team, bgColor}) {
+function SubPageTemplate({opp, premise, photoPaths, role, tools, scope, duration, team, bgColor, ComponentProp }) {
+
+    const navigate = useNavigate();
+
     return (
         <div className="sub-page-big-wrapper">
+            <button 
+            onClick={() => navigate("/")}
+            className="return-home">Return Home</button>
         <div className="sub-page-wrapper" style={{background: bgColor}}>
             <div className="sub-page-content-first">
             <div className="sub-page-content">
@@ -66,7 +73,7 @@ function SubPageTemplate({opp, premise, photoPaths, role, tools, scope, duration
             </div>
         </div>
         <div className="sub-page-content">
-                Hello I am content
+                <ComponentProp />
             </div>
         </div>
     )

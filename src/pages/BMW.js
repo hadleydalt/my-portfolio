@@ -1,6 +1,7 @@
 import SubPageTemplate from '../components/SubPageTemplate'
 import TechPhoto3 from "../graphics/tech photo 3.jpg"
 import BmwBlur from "../graphics/bmw blur.png"
+import BMWText from '../texts/BMW'
 
 function BMW() {
     return (
@@ -44,6 +45,7 @@ function BMW() {
             duration="October-December 2024 (2 months)"
             team="Experience Design Lab"
             bgColor="#0166B1"
+            ComponentProp={BMWText}
         />
     )
   }
