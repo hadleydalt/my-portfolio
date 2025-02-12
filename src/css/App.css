@@ -425,7 +425,6 @@
 .accent {
   font-family: "Poppins";
   color: black;
-  text-transform: uppercase;
   font-size: 1vw;
-  letter-spacing: 0.2vw;
+  margin-top: 2vw;
 }

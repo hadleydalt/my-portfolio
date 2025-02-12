@@ -39,16 +39,11 @@ const DashText = () => {
 
             <div className="text-img-wrapper">
                 <div className="text-body-wrapper-col">
+
                     <div className="text-subheading">Defining design goals</div>
                     <div className="text-body">
-                        <div className="accent">01.</div> Implement the basic functionalities of DASH.
-                        <div className="accent">02.</div> Address each of the pain points to make the app easier to navigate and use.
-                    </div>
-
-                    <div className="text-subheading">Tackling the goals</div>
-                    <div className="text-body">
-                        <div className="accent">01. - Implementing basic functionalities</div> I broke up DASH's functionality into four components (shown on the right).
-                        <div className="accent">02. - Addressing each pain point</div> I created an affinity diagram to map each pain point to potential solutions (shown below).
+                        <div className="accent">01. Implement the basic functionalities of DASH.</div> I broke up DASH's functionality into four components (shown on the right).
+                        <div className="accent">02. Address each pain point.</div> I created an affinity diagram to map each pain point to potential solutions (shown below).
                     </div>
 
                 </div>
