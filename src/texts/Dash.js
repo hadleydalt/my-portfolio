@@ -27,7 +27,37 @@ const DashText = () => {
             <div className="text-subheading">The functionality of DASH required simplification to more accurately reflect our mental model. </div>
 
             <div className="text-heading">Research</div>
-        </div>
+
+            <div className="text-subheading">Identifying pain points</div>
+                    <div className="text-body">
+                        Which features are making usability difficult?
+                    </div>
+
+            <img src={require("../graphics/painpoints.png")} style={{width: "90vw"}}/>
+
+            <div className="text-heading">Design Process</div>
+
+            <div className="text-img-wrapper">
+                <div className="text-body-wrapper-col">
+                    <div className="text-subheading">Defining design goals</div>
+                    <div className="text-body">
+                        <div className="accent">01.</div> Implement the basic functionalities of DASH.
+                        <div className="accent">02.</div> Address each of the pain points to make the app easier to navigate and use.
+                    </div>
+
+                    <div className="text-subheading">Tackling the goals</div>
+                    <div className="text-body">
+                        <div className="accent">01. - Implementing basic functionalities</div> I broke up DASH's functionality into four components (shown on the right).
+                        <div className="accent">02. - Addressing each pain point</div> I created an affinity diagram to map each pain point to potential solutions (shown below).
+                    </div>
+
+                </div>
+                <img src={require("../graphics/dash4func.png")} style={{width: "35vw"}}/>
+            </div>
+
+            <img src={require("../graphics/dashaffd.png")} style={{width: "90vw"}}/>
+
+        </div> 
     )
 }
 
