@@ -377,3 +377,47 @@
   margin-top: 2vw;
   cursor: pointer;
 }
+
+.text-heading {
+  font-family: "Poppins";
+  font-size: 1vw;
+  border-bottom: 1px solid lightgray;
+  width: 70vw;
+  padding-bottom: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+  margin-bottom: 2vw;
+  color: #757575;
+  margin-top: 5vw;
+}
+
+.text-body-wrapper {
+  width: 70vw;
+  padding-top: 2vw;
+  padding-left: 2vw;
+}
+
+.text-subheading {
+  font-family: "Poppins";
+  font-size: 1.5vw;
+}
+
+.text-body {
+  font-family: "Lora";
+  color: #92949A;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  margin-bottom: 2vw;
+}
+
+.text-img-wrapper {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-body-wrapper-col {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}

@@ -6,7 +6,7 @@ import DashText from "../texts/Dash"
 function Dash() {
     return (
         <SubPageTemplate 
-            opp="Optional Challenge for CS0150: Intro to OO at Brown University"
+            opp="Optional Challenge for CS0150: Intro to OOP at Brown University"
             premise={
                 <>
                 Reimagining the <span className="blurText">intuition</span> of note taking and file storage to more accurately reflect our mental model.
